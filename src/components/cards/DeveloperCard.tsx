@@ -9,12 +9,11 @@ export interface DevShort {
 
 interface DeveloperCardProps {
   developer: DevShort;
-  onClick?: () => void;
 }
 
-export function DeveloperCard({ developer, onClick }: DeveloperCardProps) {
+export function DeveloperCard({ developer }: DeveloperCardProps) {
   return (
-    <div onClick={onClick} className="group relative cursor-pointer bg-bg-card backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transition-all duration-500 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-card-hover p-6">
+    <div className="group relative cursor-pointer bg-bg-card backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden transition-all duration-500 hover:border-purple-500/50 hover:-translate-y-2 hover:shadow-card-hover p-6">
       <div className="relative mb-6 flex justify-center">
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-primary rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-500" />

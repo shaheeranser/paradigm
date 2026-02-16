@@ -17,7 +17,7 @@ export default function Home() {
   const project = {
     title: 'Sample Project',
     description: 'A compact demo showing design + interactions.',
-    image: '/placeholder-project.jpg',
+    image: '/placeholder-project.svg',
     githubUrl: '#',
     liveUrl: '#'
   };
@@ -33,7 +33,7 @@ export default function Home() {
 
       <section className="py-20 px-6">
         <div className="container mx-auto max-w-6xl grid md:grid-cols-3 gap-6">
-          <DeveloperCard developer={dev} onClick={() => {}} />
+          <DeveloperCard developer={dev} />
           <ProjectCard project={project} />
           <ProjectCard project={project} />
         </div>
