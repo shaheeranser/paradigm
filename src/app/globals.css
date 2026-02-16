@@ -43,6 +43,9 @@ body {
 
 html { scroll-behavior: smooth; }
 
+/* Section scroll margin (for proper anchor positioning below fixed navbar) */
+section { scroll-margin-top: 5rem; }
+
 /* monospace utility */
 .font-mono { font-family: var(--font-jet, 'JetBrains Mono'), 'Fira Code', monospace; }
 
@@ -70,12 +73,26 @@ html { scroll-behavior: smooth; }
 /* Button system (consistent sizes across the app) */
 .btn { @apply inline-flex items-center justify-center h-12 rounded-lg font-semibold transition-all duration-300; padding: 0 1.25rem; }
 .btn-primary { background-image: var(--gradient-button); color: white; box-shadow: 0 6px 20px rgba(124,58,237,0.12); }
-.btn-ghost { @apply bg-transparent border border-white/10 text-text-secondary hover:bg-white/3; }
-.btn-outline { @apply bg-white/5 border border-purple-500/30 text-cyan-400; }
-.btn-icon { @apply inline-flex items-center justify-center w-10 h-10 rounded-lg border border-white/10 bg-white/2; }
+.btn-primary:hover { box-shadow: 0 8px 32px rgba(124,58,237,0.25); transform: translateY(-2px); }
+.btn-primary:active { transform: translateY(0); }
+.btn-ghost { @apply bg-transparent border border-white/10 text-text-secondary hover:bg-white/3 hover:border-white/20; }
+.btn-outline { @apply bg-white/5 border border-purple-500/30 text-cyan-400 hover:bg-white/10 hover:border-purple-500/50; }
+.btn-icon { @apply inline-flex items-center justify-center w-10 h-10 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/40 transition-all; }
 
 /* Section header tweak */
 .section-header { margin-bottom: 4rem; }
 
 /* small helpers */
 .card-pad { @apply p-6 md:p-8; }
+
+/* Link and text enhancements */
+a:not(.btn):not(.btn-primary):not(.btn-ghost):not(.btn-outline):not(.btn-icon) { @apply transition-colors duration-300 hover:text-purple-400; }
+
+/* Improved focus states for accessibility */
+button:focus-visible, a:focus-visible { outline: 2px solid var(--purple-500); outline-offset: 2px; }
+
+/* smooth transitions for interactive elements */
+@media (prefers-reduced-motion: no-preference) {
+  * { @apply transition-colors duration-200; }
+}
+

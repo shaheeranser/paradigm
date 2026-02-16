@@ -5,22 +5,11 @@ import { AboutSection } from '@/components/sections/AboutSection';
 import { SkillsSection } from '@/components/sections/SkillsSection';
 import { DeveloperCard } from '@/components/cards/DeveloperCard';
 import { ProjectCard } from '@/components/cards/ProjectCard';
+import { DEVELOPERS, PROJECTS } from '@/lib/constants';
 
 export default function Home() {
-  const dev = {
-    name: 'Alex Chen',
-    role: 'Senior Full-Stack Developer',
-    avatar: '/avatar.svg',
-    skills: ['React', 'Next.js', 'TypeScript']
-  };
-
-  const project = {
-    title: 'Sample Project',
-    description: 'A compact demo showing design + interactions.',
-    image: '/placeholder-project.svg',
-    githubUrl: '#',
-    liveUrl: '#'
-  };
+  const dev = DEVELOPERS[0];
+  const projects = PROJECTS;
 
   return (
     <main className="bg-gradient-radial-dark min-h-screen">
@@ -34,8 +23,9 @@ export default function Home() {
       <section id="projects" className="py-16 md:py-20 px-6 md:px-8">
         <div className="container mx-auto max-w-6xl grid md:grid-cols-3 gap-6">
           <DeveloperCard developer={dev} />
-          <ProjectCard project={project} />
-          <ProjectCard project={project} />
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
         </div>
       </section>
 
