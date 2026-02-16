@@ -4,7 +4,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-20 px-6">
+    <section id="about" className="py-16 md:py-20 px-6 md:px-8">
       <div className="container mx-auto max-w-6xl">
         <SectionHeader>&lt;/AboutMe&gt;</SectionHeader>
 
@@ -18,11 +18,11 @@ export function AboutSection() {
             </p>
 
             <div className="flex items-center gap-4 mt-4">
-              <a href="#" className="p-3 rounded-lg bg-purple-500/20 border border-purple-500/30 hover:bg-purple-500/30 transition-all" aria-label="GitHub">
+              <a href="#" className="btn-icon" aria-label="GitHub">
                 <AiFillGithub className="w-4 h-4 text-purple-300" />
               </a>
 
-              <a href="#" className="p-3 rounded-lg bg-purple-500/20 border border-purple-500/30 hover:bg-purple-500/30 transition-all" aria-label="LinkedIn">
+              <a href="#" className="btn-icon" aria-label="LinkedIn">
                 <AiFillLinkedin className="w-4 h-4 text-purple-300" />
               </a>
             </div>

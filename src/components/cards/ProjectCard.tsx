@@ -24,11 +24,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <p className="text-text-secondary mb-4">{project.description}</p>
 
           <div className="flex items-center gap-4">
-            <a href={project.githubUrl || '#'} className="p-3 rounded-lg bg-purple-500/20 border border-purple-500/30 hover:bg-purple-500/30 transition-all" aria-label="GitHub">
+            <a href={project.githubUrl || '#'} className="btn-icon" aria-label="GitHub">
               <AiFillGithub className="w-4 h-4 text-purple-300" />
             </a>
 
-            <a href={project.liveUrl || '#'} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-purple-500/10 to-cyan-500/10 border border-purple-500/30 text-cyan-400 font-medium hover:gap-3 transition-all" aria-label="Live view">
+            <a href={project.liveUrl || '#'} className="btn btn-outline flex items-center gap-2 px-4" aria-label="Live view">
               <span>Live view</span>
               <FiArrowRight className="w-4 h-4" />
             </a>
@@ -36,8 +36,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
 
         <div className="relative rounded-lg overflow-hidden hidden md:block">
-          <div className="aspect-video w-full h-40">
-            <Image src={project.image} alt={project.title} width={720} height={400} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 rounded-lg" />
+          <div className="aspect-video w-full h-48 md:h-56">
+            <Image src={project.image} alt={project.title} width={920} height={520} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 rounded-lg" />
           </div>
           <div className="absolute inset-0 bg-gradient-to-br from-purple-500/0 to-cyan-500/0 group-hover:from-purple-500/20 group-hover:to-cyan-500/20 transition-all duration-500 rounded-lg" />
         </div>

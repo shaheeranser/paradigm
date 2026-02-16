@@ -18,7 +18,7 @@ export function DeveloperCard({ developer }: DeveloperCardProps) {
       <div className="relative mb-6 flex justify-center">
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-primary rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-500" />
-          <Image src={developer.avatar} alt={developer.name} width={128} height={128} className="relative w-32 h-32 rounded-full object-cover ring-2 ring-purple-500/50 group-hover:ring-purple-400 transition-all duration-500" />
+          <Image src={developer.avatar} alt={developer.name} width={144} height={144} className="relative w-36 h-36 rounded-full object-cover ring-2 ring-purple-500/50 group-hover:ring-purple-400 transition-all duration-500" />
           <div className="absolute bottom-2 right-2 w-4 h-4 bg-green-400 rounded-full ring-4 ring-bg-card" />
         </div>
       </div>

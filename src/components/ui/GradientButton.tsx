@@ -9,7 +9,7 @@ interface GradientButtonProps {
 }
 
 export function GradientButton({ children, icon, href, onClick }: GradientButtonProps) {
-  const base = `inline-flex items-center gap-2 px-8 py-3 rounded-lg font-semibold text-white bg-gradient-button hover:shadow-glow-purple hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group`;
+  const base = `btn btn-primary gap-2 relative overflow-hidden group`;
 
   const content = (
     <>

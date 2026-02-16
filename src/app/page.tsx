@@ -31,7 +31,7 @@ export default function Home() {
       <AboutSection />
       <SkillsSection />
 
-      <section id="projects" className="py-20 px-6">
+      <section id="projects" className="py-16 md:py-20 px-6 md:px-8">
         <div className="container mx-auto max-w-6xl grid md:grid-cols-3 gap-6">
           <DeveloperCard developer={dev} />
           <ProjectCard project={project} />

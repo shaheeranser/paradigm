@@ -6,7 +6,7 @@ export function HeroSection() {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <div className="absolute inset-0 bg-gradient-radial-dark -z-10" />
 
-      <div className="relative z-10 container mx-auto px-6">
+      <div className="relative z-10 container mx-auto px-6 md:px-8">
         <div className="max-w-4xl">
           <p className="font-mono text-text-secondary mb-4 text-lg">Greetings(); I'm</p>
 
@@ -25,7 +25,7 @@ export function HeroSection() {
           <div className="flex flex-wrap gap-4">
             <GradientButton href="#contact">Let's Talk On WhatsApp!</GradientButton>
 
-            <button className="p-3 rounded-lg border border-purple-500/50 hover:bg-purple-500/10 hover:border-purple-400 transition-all duration-300" aria-label="settings">
+            <button className="btn btn-ghost" aria-label="settings">
               <FiPlus className="w-5 h-5 text-purple-400" />
             </button>
           </div>

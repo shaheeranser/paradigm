@@ -58,3 +58,24 @@ html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
+
+/* Design utility mappings (keeps class names from spec consistent) */
+.text-text-primary { color: var(--text-primary); }
+.text-text-secondary { color: var(--text-secondary); }
+.text-text-muted { color: var(--text-muted); }
+.text-text-code { color: var(--text-code); }
+.bg-bg-card { background-color: var(--bg-card); }
+.bg-bg-card-hover { background-color: var(--bg-card-hover); }
+
+/* Button system (consistent sizes across the app) */
+.btn { @apply inline-flex items-center justify-center h-12 rounded-lg font-semibold transition-all duration-300; padding: 0 1.25rem; }
+.btn-primary { background-image: var(--gradient-button); color: white; box-shadow: 0 6px 20px rgba(124,58,237,0.12); }
+.btn-ghost { @apply bg-transparent border border-white/10 text-text-secondary hover:bg-white/3; }
+.btn-outline { @apply bg-white/5 border border-purple-500/30 text-cyan-400; }
+.btn-icon { @apply inline-flex items-center justify-center w-10 h-10 rounded-lg border border-white/10 bg-white/2; }
+
+/* Section header tweak */
+.section-header { margin-bottom: 4rem; }
+
+/* small helpers */
+.card-pad { @apply p-6 md:p-8; }
