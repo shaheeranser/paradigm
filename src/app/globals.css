@@ -37,7 +37,11 @@ body {
   font-family: var(--font-inter, system-ui), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings: "ss01" on;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+html { scroll-behavior: smooth; }
 
 /* monospace utility */
 .font-mono { font-family: var(--font-jet, 'JetBrains Mono'), 'Fira Code', monospace; }
