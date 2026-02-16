@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img">
+  <rect width="1200" height="675" rx="24" fill="#2d1b4e"/>
+  <g transform="translate(80,80)" fill="#fff" opacity="0.06">
+    <rect x="0" y="0" width="320" height="200" rx="12"/>
+    <rect x="360" y="0" width="320" height="200" rx="12"/>
+    <rect x="720" y="0" width="320" height="200" rx="12"/>
+  </g>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="36" fill="#22d3ee" opacity="0.9" font-family="Inter,Arial,Helvetica">
+    Team photo placeholder
+  </text>
+</svg>

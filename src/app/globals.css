@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens (from spec) */
+:root {
+  --bg-primary: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #2d1b4e 100%);
+  --bg-secondary: #16172b;
+  --bg-card: rgba(26, 26, 46, 0.6);
+  --bg-card-hover: rgba(45, 27, 78, 0.8);
+
+  --purple-400: #c084fc;
+  --purple-500: #a78bfa;
+  --purple-600: #9333ea;
+
+  --cyan-400: #22d3ee;
+  --cyan-500: #06b6d4;
+  --cyan-600: #0891b2;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-code: #e2e8f0;
+
+  --gradient-primary: linear-gradient(90deg, #a78bfa 0%, #c084fc 100%);
+  --gradient-button: linear-gradient(135deg, #7c3aed 0%, #c084fc 50%, #06b6d4 100%);
+  --gradient-accent: linear-gradient(45deg, #06b6d4, #3b82f6);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root { color-scheme: dark; }
+}
+
+body {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-family: var(--font-inter, system-ui), system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* monospace utility */
+.font-mono { font-family: var(--font-jet, 'JetBrains Mono'), 'Fira Code', monospace; }
+
+/* small utility helpers from spec */
+.bg-gradient-primary { background-image: var(--gradient-primary); }
+.bg-gradient-button { background-image: var(--gradient-button); }
+
+.focus-visible-gradient:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(167,139,250,0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
