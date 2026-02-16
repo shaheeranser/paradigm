@@ -33,7 +33,7 @@ export function AboutSection() {
 
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden">
-              <Image src="/team-photo.jpg" alt="Team" width={900} height={520} className="w-full h-auto rounded-2xl shadow-lg" priority />
+              <Image src="/team-photo.svg" alt="Team" width={900} height={520} className="w-full h-auto rounded-2xl shadow-lg" priority />
               <div className="absolute inset-0 border-4 border-transparent bg-gradient-to-br from-purple-500 to-cyan-500 rounded-2xl -z-10 blur-xl opacity-40" />
             </div>
             <div className="absolute top-8 right-8 w-3 h-3 bg-white rounded-full shadow-glow-purple animate-pulse" />
