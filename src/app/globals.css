@@ -75,7 +75,7 @@ section { scroll-margin-top: 5rem; }
 .btn-primary { background-image: var(--gradient-button); color: white; box-shadow: 0 6px 20px rgba(124,58,237,0.12); }
 .btn-primary:hover { box-shadow: 0 8px 32px rgba(124,58,237,0.25); transform: translateY(-2px); }
 .btn-primary:active { transform: translateY(0); }
-.btn-ghost { @apply bg-transparent border border-white/10 text-text-secondary hover:bg-white/3 hover:border-white/20; }
+.btn-ghost { @apply bg-transparent border border-white/10 text-text-secondary hover:bg-white hover:border-white/20; }
 .btn-outline { @apply bg-white/5 border border-purple-500/30 text-cyan-400 hover:bg-white/10 hover:border-purple-500/50; }
 .btn-icon { @apply inline-flex items-center justify-center w-10 h-10 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/40 transition-all; }
 
