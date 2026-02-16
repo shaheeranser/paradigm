@@ -1,8 +1,18 @@
+"use client";
+import { useState } from 'react';
 import { SectionHeader } from '@/components/ui/SectionHeader';
-import { DEVELOPERS } from '@/lib/constants';
+import { DEVELOPERS, PROJECTS, Developer } from '@/lib/constants';
 import { DeveloperCard } from '@/components/cards/DeveloperCard';
+import { DeveloperDetailModal } from '@/components/modals/DeveloperDetailModal';
 
 export function TeamSection() {
+  const [selected, setSelected] = useState<Developer | null>(null);
+
+  const open = (dev: Developer) => setSelected(dev);
+  const close = () => setSelected(null);
+
+  const projectsFor = (devId: string) => PROJECTS.filter((p) => p.contributors?.includes(devId));
+
   return (
     <section id="team" className="py-16 md:py-20 px-6 md:px-8">
       <div className="container mx-auto max-w-6xl">
@@ -15,12 +25,18 @@ export function TeamSection() {
           engineering and operations to build measurable outcomes for clients.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
           {DEVELOPERS.map((dev) => (
-            <DeveloperCard key={dev.name} developer={dev} />
+            <button key={dev.id} onClick={() => open(dev)} className="w-full text-left">
+              <DeveloperCard developer={dev} />
+            </button>
           ))}
         </div>
       </div>
+
+      {selected && (
+        <DeveloperDetailModal developer={selected} projects={projectsFor(selected.id)} onClose={close} />
+      )}
     </section>
   );
 }
