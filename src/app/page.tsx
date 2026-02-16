@@ -4,11 +4,8 @@ import { HeroSection } from '@/components/sections/HeroSection';
 import { AboutSection } from '@/components/sections/AboutSection';
 import { TeamSection } from '@/components/sections/TeamSection';
 import { ContactSection } from '@/components/sections/ContactSection';
-import { ProjectCard } from '@/components/cards/ProjectCard';
-import { PROJECTS } from '@/lib/constants';
 
 export default function Home() {
-  const projects = PROJECTS;
 
   return (
     <main className="bg-gradient-radial-dark min-h-screen">
