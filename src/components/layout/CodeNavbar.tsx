@@ -2,13 +2,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { FiMenu, FiX, FiSettings } from 'react-icons/fi';
-
-const navItems = [
-  { label: '</Home>', id: 'home' },
-  { label: '</AboutMe>', id: 'about' },
-  { label: '</Skills>', id: 'skills' },
-  { label: '</Projects>', id: 'projects' }
-];
+import { NAV_ITEMS } from '@/lib/constants';
 
 export function CodeNavbar() {
   const [open, setOpen] = useState(false);
@@ -17,7 +11,7 @@ export function CodeNavbar() {
   useEffect(() => {
     const observers: IntersectionObserver[] = [];
 
-    navItems.forEach((it) => {
+    NAV_ITEMS.forEach((it) => {
       const el = document.getElementById(it.id);
       if (!el) return;
       const obs = new IntersectionObserver(
@@ -26,7 +20,7 @@ export function CodeNavbar() {
             if (entry.isIntersecting) setActive(it.id);
           });
         },
-        { root: null, threshold: 0.45 }
+        { root: null, threshold: 0.6 }
       );
       obs.observe(el);
       observers.push(obs);
@@ -38,7 +32,7 @@ export function CodeNavbar() {
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
     if (!el) return;
-    el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     setOpen(false);
   };
 
@@ -54,7 +48,7 @@ export function CodeNavbar() {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
-          {navItems.map((item) => (
+          {NAV_ITEMS.map((item) => (
             <button
               key={item.id}
               onClick={() => scrollTo(item.id)}
@@ -87,7 +81,7 @@ export function CodeNavbar() {
       {/* Mobile menu */}
       <div className={`md:hidden bg-dark-navy/95 border-t border-white/5 transition-max-height duration-300 overflow-hidden ${open ? 'max-h-[400px] py-4' : 'max-h-0'}`}>
         <div className="container mx-auto px-4 flex flex-col gap-3">
-          {navItems.map((item) => (
+          {NAV_ITEMS.map((item) => (
             <button
               key={item.id}
               onClick={() => scrollTo(item.id)}

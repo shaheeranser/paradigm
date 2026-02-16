@@ -1,11 +1,5 @@
 import { SectionHeader } from '@/components/ui/SectionHeader';
-
-const skillCategories = [
-  { category: 'Frontend', skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vue.js'] },
-  { category: 'Backend', skills: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'GraphQL'] },
-  { category: 'DevOps', skills: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform'] },
-  { category: 'Design', skills: ['Figma', 'Adobe XD', 'UI/UX', 'Prototyping', 'Design Systems'] }
-];
+import { SKILL_CATEGORIES } from '@/lib/constants';
 
 export function SkillsSection() {
   return (
@@ -16,7 +10,7 @@ export function SkillsSection() {
         <h3 className="text-4xl font-bold text-center text-white mb-16">Tech Stack</h3>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {skillCategories.map((category) => (
+          {SKILL_CATEGORIES.map((category) => (
             <div key={category.category} className="group">
               <h4 className="text-xl font-bold text-purple-400 mb-6 font-mono">{category.category}</h4>
               <div className="space-y-3">
