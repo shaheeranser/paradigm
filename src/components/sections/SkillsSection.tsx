@@ -1,29 +1,7 @@
-import { SectionHeader } from '@/components/ui/SectionHeader';
-import { SKILL_CATEGORIES } from '@/lib/constants';
+// SkillsSection has been deprecated and removed from the public UI.
+// The application now uses `TeamSection` in its place and sources skill data
+// from `src/lib/constants.ts` when needed for internal pages or tooling.
 
 export function SkillsSection() {
-  return (
-    <section id="skills" className="py-16 md:py-20 px-6 md:px-8 relative">
-      <div className="container mx-auto max-w-6xl">
-        <SectionHeader align="center">&lt;/Skills&gt;</SectionHeader>
-
-        <h3 className="text-4xl font-bold text-center text-white mb-16">Tech Stack</h3>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {SKILL_CATEGORIES.map((category) => (
-            <div key={category.category} className="group">
-              <h4 className="text-xl font-bold text-purple-400 mb-6 font-mono">{category.category}</h4>
-              <div className="space-y-3">
-                {category.skills.map((skill) => (
-                  <div key={skill} className="px-3 py-2 rounded-lg bg-white/5 border border-white/10 text-text-secondary text-sm hover:bg-purple-500/10 hover:border-purple-500/50 hover:text-white hover:-translate-x-1 transition-all duration-300 cursor-default">
-                    {skill}
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+  return null; // intentionally removed — kept for compatibility
 }

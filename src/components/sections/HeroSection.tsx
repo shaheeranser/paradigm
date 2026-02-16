@@ -8,7 +8,7 @@ export function HeroSection() {
 
       <div className="relative z-10 container mx-auto px-6 md:px-8">
         <div className="max-w-4xl">
-          <p className="font-mono text-text-secondary mb-4 text-lg">Greetings(); I'm</p>
+          <p className="font-mono text-text-secondary mb-4 text-lg">Greetings(); We are</p>
 
           <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-[1.02]">
             <span className="bg-gradient-primary bg-clip-text text-transparent">Paradigm</span>
@@ -23,7 +23,7 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <GradientButton href="#contact">Let's Talk On WhatsApp!</GradientButton>
+            <GradientButton href="#contact">Contact us</GradientButton>
 
             <button className="btn btn-ghost" aria-label="settings">
               <FiPlus className="w-5 h-5 text-purple-400" />

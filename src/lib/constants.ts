@@ -1,49 +1,65 @@
-// Dummy developers data
+// Developers data updated from provided profiles
 export const DEVELOPERS = [
   {
-    name: 'Alex Chen',
-    role: 'Senior Full-Stack Developer',
+    name: 'Muhammad Shaheer',
+    role: 'Full Stack Developer',
     avatar: '/avatar.svg',
-    skills: ['React', 'Next.js', 'TypeScript', 'Node.js', 'PostgreSQL']
+    skills: ['ReactJS', 'ExpressJS', 'FastAPI', 'Python', 'DevOps']
   },
   {
-    name: 'Jordan Lee',
-    role: 'UI/UX Designer & Frontend Dev',
+    name: 'Rida Hanif',
+    role: 'Data Scientist',
     avatar: '/avatar.svg',
-    skills: ['Figma', 'React', 'Tailwind CSS', 'Animation', 'Design Systems']
+    skills: ['Python', 'SQL', 'Power BI', 'MLOps', 'Azure']
   },
   {
-    name: 'Sam Rivera',
-    role: 'Backend & DevOps Engineer',
+    name: 'Samra Akhtar',
+    role: 'Web Developer & AI Student',
     avatar: '/avatar.svg',
-    skills: ['Python', 'Docker', 'AWS', 'PostgreSQL', 'GraphQL']
+    skills: ['HTML/CSS', 'Bootstrap', 'Python', 'C++', 'AI Logic']
   }
 ];
 
-// Dummy projects data
+// Projects data populated with key projects from the profiles
 export const PROJECTS = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    description: 'Modern e-commerce solution with real-time inventory and payment integration.',
+    title: 'LookVisa',
+    description: 'Commercial platform connecting international investors with sponsors, featuring custom marketplace logic and user workflows.',
     image: '/placeholder-project.svg',
-    githubUrl: 'https://github.com',
-    liveUrl: '#'
+    githubUrl: 'https://github.com/shaheeranser',
+    liveUrl: 'https://lookvisa.com'
   },
   {
     id: 2,
-    title: 'SaaS Dashboard',
-    description: 'Analytics dashboard for monitoring metrics and user engagement in real-time.',
+    title: 'Student Performance Dashboard',
+    description: 'Interactive Power BI dashboard visualizing KPIs like subject-wise performance and attendance trends with DAX measures.',
     image: '/placeholder-project.svg',
-    githubUrl: 'https://github.com',
+    githubUrl: '#',
     liveUrl: '#'
   },
   {
     id: 3,
-    title: 'Mobile App (React Native)',
-    description: 'Cross-platform mobile application with offline-first architecture.',
+    title: 'Virtual Car Showroom (VCS)',
+    description: 'AI-powered web application integrating intelligent recommendation features into a web-based platform.',
     image: '/placeholder-project.svg',
-    githubUrl: 'https://github.com',
+    githubUrl: '#',
+    liveUrl: '#'
+  },
+  {
+    id: 4,
+    title: 'Thrive Forward',
+    description: 'Static front-end for a therapy clinic with automated scheduling and contact form integration.',
+    image: '/placeholder-project.svg',
+    githubUrl: 'https://github.com/shaheeranser',
+    liveUrl: 'https://thrive-forward.vercel.app'
+  },
+  {
+    id: 5,
+    title: 'Generic ML Pipeline',
+    description: 'End-to-end machine learning pipeline with modular components for data ingestion, transformation, and MLOps deployment.',
+    image: '/placeholder-project.svg',
+    githubUrl: '#',
     liveUrl: '#'
   }
 ];
@@ -51,27 +67,27 @@ export const PROJECTS = [
 // Navigation items
 export const NAV_ITEMS = [
   { label: '</Home>', id: 'home' },
-  { label: '</AboutMe>', id: 'about' },
-  { label: '</Skills>', id: 'skills' },
+  { label: '</AboutUs>', id: 'about' },
+  { label: '</Team>', id: 'team' },
   { label: '</Projects>', id: 'projects' }
 ];
 
-// Skill categories
+// Skill categories updated with combined skills from all profiles
 export const SKILL_CATEGORIES = [
   {
     category: 'Frontend',
-    skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vue.js']
+    skills: ['ReactJS', 'HTML', 'CSS', 'Bootstrap', 'Tailwind CSS']
   },
   {
-    category: 'Backend',
-    skills: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'GraphQL']
+    category: 'Backend & AI',
+    skills: ['Python', 'ExpressJS', 'FastAPI', 'C++', 'Generative AI', 'NLP']
   },
   {
-    category: 'DevOps',
-    skills: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform']
+    category: 'Data & DevOps',
+    skills: ['SQL', 'Power BI', 'Tableau', 'Docker', 'Azure', 'MLOps']
   },
   {
-    category: 'Design',
-    skills: ['Figma', 'Adobe XD', 'UI/UX', 'Prototyping', 'Design Systems']
+    category: 'Tools & Design',
+    skills: ['Git', 'Postman', 'Excel', 'LangChain', 'Scikit-learn']
   }
 ];
