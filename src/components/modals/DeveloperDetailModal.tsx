@@ -35,7 +35,7 @@ export function DeveloperDetailModal({ developer, projects, onClose }: Props) {
             </div>
             <div>
               <h3 className="text-2xl font-bold text-white">{developer.name}</h3>
-              <p className="text-text-muted">{developer.role} — {developer.yearsOfExperience} yrs</p>
+              <p className="text-text-muted">{developer.role}</p>
             </div>
           </div>
 

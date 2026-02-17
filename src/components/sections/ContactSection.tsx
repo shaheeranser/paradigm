@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from 'react';
-import { WEB3FORMS_ACCESS_KEY } from '@/lib/constants';
 
 export function ContactSection() {
   const [status, setStatus] = useState<'idle'|'sending'|'success'|'error'>('idle');
@@ -13,7 +12,14 @@ export function ContactSection() {
     try {
       const form = e.target as HTMLFormElement;
       const fd = new FormData(form);
-      fd.append('access_key', WEB3FORMS_ACCESS_KEY || '');
+      const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || '';
+      if (!accessKey) {
+        console.error('Missing NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY');
+        setStatus('error');
+        setTimeout(() => setStatus('idle'), 2000);
+        return;
+      }
+      fd.append('access_key', accessKey);
       fd.append('subject', 'New contact request - Paradigm');
 
       const res = await fetch('https://api.web3forms.com/submit', {
@@ -57,7 +63,7 @@ export function ContactSection() {
           </div>
         </form>
 
-        <p className="text-text-muted mt-6 text-sm">Or email us at <a href="mailto:hello@paradigm.dev" className="text-purple-400">hello@paradigm.dev</a></p>
+        <p className="text-text-muted mt-6 text-sm">Or email us at <a href="mailto:ahmadtariq2004@gmail.com" className="text-purple-400">ahmadtariq2004@gmail.com</a></p>
       </div>
     </section>
   );

@@ -4,7 +4,6 @@ export interface Developer {
   name: string;
   role: string;
   avatar: string;
-  yearsOfExperience?: number;
   bio?: string;
   skills: string[];
 }
@@ -27,8 +26,7 @@ export const DEVELOPERS: Developer[] = [
     name: 'Muhammad Shaheer',
     role: 'Full Stack Developer',
     avatar: '/shaheer.jpeg',
-    yearsOfExperience: 6,
-    bio: 'Lead engineer focused on building scalable web platforms and integrations.',
+    bio: 'Engineer; worked on LookVisa, Thrive Forward and an AI customer-support chatbot.',
     skills: ['ReactJS', 'ExpressJS', 'FastAPI', 'Python', 'DevOps']
   },
   {
@@ -36,8 +34,7 @@ export const DEVELOPERS: Developer[] = [
     name: 'Rida Hanif',
     role: 'Data Scientist',
     avatar: '/rida.jpeg',
-    yearsOfExperience: 5,
-    bio: 'Data scientist specializing in analytics, ML pipelines and visualizations.',
+    bio: 'Data scientist focusing on ML pipelines, dashboards and analytics.',
     skills: ['Python', 'SQL', 'Power BI', 'MLOps', 'Azure']
   },
   {
@@ -45,8 +42,7 @@ export const DEVELOPERS: Developer[] = [
     name: 'Samra Akhtar',
     role: 'Web Developer & Designer',
     avatar: '/samra.jpeg',
-    yearsOfExperience: 4,
-    bio: 'Front-end developer with a focus on UI/UX and accessible designs.',
+    bio: 'Front-end developer focused on UI/UX implementation and accessible interfaces.',
     skills: ['HTML/CSS', 'Bootstrap', 'Tailwind CSS', 'Python', 'UI/UX']
   },
   {
@@ -54,8 +50,7 @@ export const DEVELOPERS: Developer[] = [
     name: 'Muhammad Ahmad',
     role: 'AI Engineer & Data Analyst',
     avatar: '/ahmad.jpeg',
-    yearsOfExperience: 3,
-    bio: 'AI engineer working on production ML systems and generative AI integrations.',
+    bio: 'Experience in CSR and management at an MNC; works on AI and analytics.',
     skills: ['Python', 'Generative AI', 'NLP', 'LangChain', 'Scikit-learn']
   }
 ];
@@ -99,7 +94,7 @@ export const PROJECTS: Project[] = [
     image: '/placeholder-project.svg',
     githubUrl: 'https://github.com/shaheeranser',
     liveUrl: 'https://thrive-forward.vercel.app',
-    contributors: ['dev-001', 'dev-003'],
+    contributors: ['dev-001'],
     categories: ['design', 'csr']
   },
   {
@@ -111,6 +106,36 @@ export const PROJECTS: Project[] = [
     liveUrl: '#',
     contributors: ['dev-004', 'dev-002'],
     categories: ['ml', 'ops']
+  },
+  {
+    id: 6,
+    title: 'AI Customer Support Chatbot',
+    description: 'Conversational AI chatbot for customer support automation and routing.',
+    image: '/placeholder-project.svg',
+    githubUrl: '#',
+    liveUrl: '#',
+    contributors: ['dev-001'],
+    categories: ['ai', 'support']
+  },
+  {
+    id: 7,
+    title: 'Asset Management System',
+    description: 'Model-driven asset management application built with Dynamics 365 and Power Apps.',
+    image: '/placeholder-project.svg',
+    githubUrl: '#',
+    liveUrl: '#',
+    contributors: ['dev-002'],
+    categories: ['enterprise', 'tools']
+  },
+  {
+    id: 8,
+    title: 'Bank Customer Churn Prediction',
+    description: 'Classification model to predict customer churn using customer profile data and ensemble models.',
+    image: '/placeholder-project.svg',
+    githubUrl: '#',
+    liveUrl: '#',
+    contributors: ['dev-002'],
+    categories: ['data', 'ml']
   }
 ];
 
