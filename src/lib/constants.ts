@@ -25,34 +25,34 @@ export const DEVELOPERS: Developer[] = [
     id: 'dev-001',
     name: 'Muhammad Shaheer',
     role: 'Full Stack Developer',
-    avatar: '/shaheer.jpeg',
-    bio: 'Engineer; worked on LookVisa, Thrive Forward and an AI customer-support chatbot.',
-    skills: ['ReactJS', 'ExpressJS', 'FastAPI', 'Python', 'DevOps']
+    avatar: '/shaheer.jpeg', // Ensure these image paths match your actual assets
+    bio: 'Final-year Computer Systems student building functional web apps. Experienced in commercial full-stack development and hardware-software interfaces.',
+    skills: ['ReactJS', 'ExpressJS', 'FastAPI', 'DevOps', 'Computer Systems']
+  },
+  {
+    id: 'dev-004',
+    name: 'Muhammad Ahmad',
+    role: 'Operations Manager & Creative Lead',
+    avatar: '/ahmad.jpeg',
+    bio: 'Manager and Team Lead with 2+ years in CSR and dispatch operations (vGrubs/Grubcon). Experienced in graphic design and team leadership.',
+    skills: ['Team Leadership', 'CRM', 'Adobe Photoshop', 'Adobe Illustrator', 'Customer Support']
   },
   {
     id: 'dev-002',
     name: 'Rida Hanif',
     role: 'Data Scientist',
     avatar: '/rida.jpeg',
-    bio: 'Data scientist focusing on ML pipelines, dashboards and analytics.',
-    skills: ['Python', 'SQL', 'Power BI', 'MLOps', 'Azure']
+    bio: 'Data Scientist focused on end-to-end ML pipelines, visualization, and MLOps. Skilled in communicating insights via Power BI and Azure.',
+    skills: ['Python', 'SQL', 'Power BI', 'MLOps', 'Azure', 'Docker']
   },
   {
     id: 'dev-003',
     name: 'Samra Akhtar',
-    role: 'Web Developer & Designer',
+    role: 'Frontend Developer & AI Enthusiast',
     avatar: '/samra.jpeg',
-    bio: 'Front-end developer focused on UI/UX implementation and accessible interfaces.',
-    skills: ['HTML/CSS', 'Bootstrap', 'Tailwind CSS', 'Python', 'UI/UX']
+    bio: 'Post-ADP CS student combining web development with AI integration. focused on responsive design and voice recognition logic.',
+    skills: ['HTML/CSS', 'Bootstrap', 'Python', 'C++', 'Voice Recognition']
   },
-  {
-    id: 'dev-004',
-    name: 'Muhammad Ahmad',
-    role: 'AI Engineer & Data Analyst',
-    avatar: '/ahmad.jpeg',
-    bio: 'Experience in CSR and management at an MNC; works on AI and analytics.',
-    skills: ['Python', 'Generative AI', 'NLP', 'LangChain', 'Scikit-learn']
-  }
 ];
 
 // Projects data populated with key projects from the profiles
@@ -69,73 +69,83 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 2,
+    title: 'Thrive Forward',
+    description: 'Therapy clinic platform with automated scheduling and contact integrations. Focused on static front-end and business operations.',
+    image: '/placeholder-project.svg',
+    githubUrl: 'https://github.com/shaheeranser',
+    liveUrl: 'https://thrive-forward.vercel.app',
+    contributors: ['dev-001'],
+    categories: ['design', 'commercial']
+  },
+  {
+    id: 3,
     title: 'Student Performance Dashboard',
-    description: 'Interactive Power BI dashboard visualizing KPIs like subject-wise performance and attendance trends with DAX measures.',
+    description: 'Interactive Power BI dashboard visualizing KPIs like subject-wise performance, attendance trends, and pass/fail ratios using DAX.',
     image: '/placeholder-project.svg',
     githubUrl: '#',
     liveUrl: '#',
     contributors: ['dev-002'],
-    categories: ['data', 'education']
+    categories: ['data', 'analytics']
   },
   {
-    id: 3,
+    id: 4,
+    title: 'Lahorified (Creative Lead)',
+    description: 'Led creative direction and design operations, overseeing digital content and visual branding strategies.',
+    image: '/placeholder-project.svg',
+    githubUrl: '#',
+    liveUrl: '#',
+    contributors: ['dev-004'],
+    categories: ['design', 'creative']
+  },
+  {
+    id: 5,
+    title: 'LDA Project Supervision',
+    description: 'Supervised on-site project operations and coordinated between technical teams for the Lahore Development Authority.',
+    image: '/placeholder-project.svg',
+    githubUrl: '#',
+    liveUrl: '#',
+    contributors: ['dev-004'],
+    categories: ['management', 'operations']
+  },
+  {
+    id: 6,
+    title: 'vGrubs & Grubcon Operations',
+    description: 'Managed recovery, concierge, and dispatch departments. Collaborated with UberEATS, Grubhub, and Doordash providers.',
+    image: '/placeholder-project.svg',
+    githubUrl: '#',
+    liveUrl: '#',
+    contributors: ['dev-004'],
+    categories: ['management', 'operations']
+  },
+  {
+    id: 7,
     title: 'Virtual Car Showroom (VCS)',
     description: 'AI-powered web application integrating intelligent recommendation features into a web-based platform.',
     image: '/placeholder-project.svg',
     githubUrl: '#',
     liveUrl: '#',
-    contributors: ['dev-003', 'dev-004'],
-    categories: ['ai', 'product']
-  },
-  {
-    id: 4,
-    title: 'Thrive Forward',
-    description: 'Front-end and UX for a therapy clinic with automated scheduling and contact integrations (design-focused).',
-    image: '/placeholder-project.svg',
-    githubUrl: 'https://github.com/shaheeranser',
-    liveUrl: 'https://thrive-forward.vercel.app',
-    contributors: ['dev-001'],
-    categories: ['design', 'csr']
-  },
-  {
-    id: 5,
-    title: 'Generic ML Pipeline',
-    description: 'End-to-end machine learning pipeline with modular components for data ingestion, transformation, and MLOps deployment.',
-    image: '/placeholder-project.svg',
-    githubUrl: '#',
-    liveUrl: '#',
-    contributors: ['dev-004', 'dev-002'],
-    categories: ['ml', 'ops']
-  },
-  {
-    id: 6,
-    title: 'AI Customer Support Chatbot',
-    description: 'Conversational AI chatbot for customer support automation and routing.',
-    image: '/placeholder-project.svg',
-    githubUrl: '#',
-    liveUrl: '#',
-    contributors: ['dev-001'],
-    categories: ['ai', 'support']
-  },
-  {
-    id: 7,
-    title: 'Asset Management System',
-    description: 'Model-driven asset management application built with Dynamics 365 and Power Apps.',
-    image: '/placeholder-project.svg',
-    githubUrl: '#',
-    liveUrl: '#',
-    contributors: ['dev-002'],
-    categories: ['enterprise', 'tools']
+    contributors: ['dev-003'],
+    categories: ['ai', 'web']
   },
   {
     id: 8,
-    title: 'Bank Customer Churn Prediction',
-    description: 'Classification model to predict customer churn using customer profile data and ensemble models.',
+    title: 'Generic ML Pipeline',
+    description: 'End-to-end machine learning system with modular components for data ingestion, transformation, and MLOps deployment.',
     image: '/placeholder-project.svg',
     githubUrl: '#',
     liveUrl: '#',
     contributors: ['dev-002'],
-    categories: ['data', 'ml']
+    categories: ['ml', 'ops']
+  },
+  {
+    id: 9,
+    title: 'PNY Trainings Brand Ambassadorship',
+    description: 'Represented PNY at promotional campaigns and workshops, engaging students and professionals in technical education.',
+    image: '/placeholder-project.svg',
+    githubUrl: '#',
+    liveUrl: '#',
+    contributors: ['dev-004'],
+    categories: ['marketing', 'communications']
   }
 ];
 
@@ -153,19 +163,19 @@ export const WEB3FORMS_ACCESS_KEY = 'REPLACE_WITH_YOUR_WEB3FORMS_KEY';
 // Skill categories updated with combined skills from all profiles
 export const SKILL_CATEGORIES = [
   {
-    category: 'Frontend',
-    skills: ['ReactJS', 'HTML', 'CSS', 'Bootstrap', 'Tailwind CSS']
+    category: 'Full Stack & AI',
+    skills: ['ReactJS', 'FastAPI', 'Python', 'C++', 'Voice Recognition']
   },
   {
-    category: 'Backend & AI',
-    skills: ['Python', 'ExpressJS', 'FastAPI', 'C++', 'Generative AI', 'NLP']
+    category: 'Data Science',
+    skills: ['SQL', 'Power BI', 'MLOps', 'Azure', 'Docker', 'R']
   },
   {
-    category: 'Data & DevOps',
-    skills: ['SQL', 'Power BI', 'Tableau', 'Docker', 'Azure', 'MLOps']
+    category: 'Operations & Design',
+    skills: ['Team Leadership', 'CRM', 'Adobe Photoshop', 'Illustrator', 'Management']
   },
   {
-    category: 'Tools & Design',
-    skills: ['Git', 'Postman', 'Excel', 'LangChain', 'Scikit-learn']
+    category: 'Core Engineering',
+    skills: ['HTML/CSS', 'Bootstrap', 'Git', 'Computer Systems', 'DevOps']
   }
 ];
