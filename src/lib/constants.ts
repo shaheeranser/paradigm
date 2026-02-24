@@ -22,20 +22,20 @@ export interface Project {
 // Developers data updated from provided profiles
 export const DEVELOPERS: Developer[] = [
   {
+    id: 'dev-004',
+    name: 'Muhammad Ahmad',
+    role: 'Operations Manager & Creative Lead',
+    avatar: '/ahmad.jpeg',
+    bio: 'Manager and Team Lead with 2+ years in CSR and dispatch operations (vGrubs/Grubcon). Experienced in graphic design and team leadership.',
+    skills: ['Team Leadership', 'CRM', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe Premiere Pro', 'HTML', 'CSS', 'Customer Support']
+  },
+  {
     id: 'dev-001',
     name: 'Muhammad Shaheer',
     role: 'Full Stack Developer',
     avatar: '/shaheer.jpeg', // Ensure these image paths match your actual assets
     bio: 'Final-year Computer Systems student building functional web apps. Experienced in commercial full-stack development and hardware-software interfaces.',
     skills: ['ReactJS', 'ExpressJS', 'FastAPI', 'DevOps', 'Computer Systems']
-  },
-  {
-    id: 'dev-004',
-    name: 'Muhammad Ahmad',
-    role: 'Operations Manager & Creative Lead',
-    avatar: '/ahmad.jpeg',
-    bio: 'Manager and Team Lead with 2+ years in CSR and dispatch operations (vGrubs/Grubcon). Experienced in graphic design and team leadership.',
-    skills: ['Team Leadership', 'CRM', 'Adobe Photoshop', 'Adobe Illustrator', 'Customer Support']
   },
   {
     id: 'dev-002',
