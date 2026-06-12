@@ -27,7 +27,7 @@ export function HeroSection() {
           <p className="font-mono text-purple-400/80 mb-5 text-sm tracking-widest uppercase">Greetings(); We are</p>
 
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-[1.05]">
-            <span className="bg-gradient-primary bg-clip-text text-transparent">Paradigm</span>
+            <span className="bg-gradient-primary bg-clip-text text-transparent">SyncroOps</span>
             <span className="text-white">.</span>
           </h1>
 

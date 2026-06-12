@@ -64,9 +64,9 @@ export function CodeNavbar() {
         {/* Logo */}
         <button onClick={() => scrollTo('home')} className="flex items-center gap-3 focus:outline-none group">
           <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-purple-500 to-cyan-500 flex items-center justify-center font-bold text-white text-sm shadow-lg shadow-purple-500/20">
-            P
+            S
           </div>
-          <span className="font-semibold text-white text-lg tracking-tight group-hover:text-purple-300 transition-colors">Paradigm</span>
+          <span className="font-semibold text-white text-lg tracking-tight group-hover:text-purple-300 transition-colors">SyncroOps</span>
         </button>
 
         {/* Desktop nav */}
@@ -137,7 +137,7 @@ export function CodeNavbar() {
           {/* Optional: Add social links or contact at the bottom since it's full screen */}
           <div className="mt-auto mb-10">
             <p className="text-text-muted text-xs uppercase tracking-widest mb-4">Get in touch</p>
-            <a href="mailto:ahmadtariq2004@gmail.com" className="text-white font-mono">hello@paradigm.com</a>
+            <a href="mailto:hello@syncroops.com" className="text-white font-mono">hello@syncroops.com</a>
           </div>
         </div>
       </div>

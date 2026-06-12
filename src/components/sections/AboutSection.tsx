@@ -24,7 +24,7 @@ export function AboutSection() {
           {/* Left — copy */}
           <div className="space-y-6">
             <p className="text-base sm:text-lg text-text-secondary leading-relaxed">
-              Hi! We are Paradigm, a cutting-edge software agency specializing in modern web 
+              Hi! We are SyncroOps, a cutting-edge software agency specializing in modern web 
               Instead of creating just another software company, we started enjoying the
               challenge of building custom solutions. Creating bespoke systems for our clients
               has taught us a lot about design, development, and collaboration!
