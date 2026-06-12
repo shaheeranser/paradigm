@@ -6,8 +6,8 @@ const inter = Inter({ variable: '--font-inter', subsets: ['latin'] });
 const jet = JetBrains_Mono({ variable: '--font-jet', subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Paradigm',
-  description: 'Paradigm — Software agency showcase'
+  title: 'SyncroOps',
+  description: 'SyncroOps — Software agency showcase'
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

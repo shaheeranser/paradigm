@@ -21,7 +21,7 @@ export function ContactSection() {
         return;
       }
       fd.append('access_key', accessKey);
-      fd.append('subject', 'New contact request - Paradigm');
+      fd.append('subject', 'New contact request - SyncroOps');
 
       const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
