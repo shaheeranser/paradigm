@@ -137,7 +137,7 @@ export function CodeNavbar() {
           {/* Optional: Add social links or contact at the bottom since it's full screen */}
           <div className="mt-auto mb-10">
             <p className="text-text-muted text-xs uppercase tracking-widest mb-4">Get in touch</p>
-            <a href="mailto:ahmadtariq2004@gmail.com" className="text-white font-mono">hello@syncroops.com</a>
+            <a href="mailto:hello@syncroops.com" className="text-white font-mono">hello@syncroops.com</a>
           </div>
         </div>
       </div>
